@@ -1,10 +1,15 @@
 :root {
     --primary-color: #fff;
-    --text-color: #1C274C;
+    --secondary-color: #000;
+    --text-color: #727272;
+    --text-lighter-color: #0000004d;
     --text-lighter: #9F9F9F;
     --text-active: #3AADA8;
     --text-error: #FF5F5F;
     --background: #F9F9F9;
+    --background-hover: #F2F2F2;
     --item-background: #557C83;
-    --border-color: #F9F9F9;
+    --border-color: #E4E4E4;
+
+    --primary-transition: 0.3s ease;
 }
