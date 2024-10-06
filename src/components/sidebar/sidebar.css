@@ -1,0 +1,10 @@
+@import '../../assets/styles/varailable.css';
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
