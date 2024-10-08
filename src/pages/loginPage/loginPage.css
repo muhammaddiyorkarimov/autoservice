@@ -1,0 +1,136 @@
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+}
+
+.login-page form {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-hover);
+    max-width: 380px;
+    min-height: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    border-top: 4px solid var(--border-color);
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    45% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50%,
+    95% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-page .title {
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    white-space: nowrap;
+    bottom: 50px;
+    font-size: 32px;
+}
+
+.text-wrapper {
+    position: relative;
+    display: block;
+}
+
+.login-text,
+.welcome-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-text {
+    animation: fadeInOut 8s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text {
+    animation: fadeInOut 8s infinite;
+    animation-delay: 4s;
+}
+
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.input-wrapper svg {
+    color: #000;
+}
+
+.input-wrapper input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.password-toggle:hover {
+    color: #333;
+}
+
+.login-page form button {
+    position: relative;
+    top: 40px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: #EAEAEA;
+}

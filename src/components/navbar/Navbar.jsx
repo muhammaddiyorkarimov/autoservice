@@ -1,10 +1,10 @@
 import { LuUser2 } from 'react-icons/lu'
 import './navbar.css'
 
-function Navbar() {
+function Navbar({title}) {
   return (
     <div className='navbar'>
-      <div className="navbar-title">Dashboard</div>
+      <div className="navbar-title">{title}</div>
       <div className="navbar-items">
         <div className="img">
         <LuUser2 />

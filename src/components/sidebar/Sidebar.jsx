@@ -1,8 +1,8 @@
 import './sidebar.css'
 import images from './../../images/index';
 import { useState } from 'react';
-import { useActiveState } from './../../helpers/useActiveState';
 import { Link } from 'react-router-dom';
+import { useActiveState } from '../../functions/useActiveState';
 
 function Sidebar() {
 
